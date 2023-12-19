@@ -3,7 +3,7 @@
    - <span style="color: skyblue">Index.html</span> 主要更改的檔案
    - <span style="color: skyblue">README.md</span> 該次作業說明文件
    - <span style="color: skyblue">Result.(jpg | jpeg | png)</span> 該此作業該達成的畫面
-2. 請更改該次目錄 HW x 裡面的 Index.html 檔案，並使其畫面更貼近於result.jpg
+2. 請更改該次目錄 HW x 裡面的 Index.html 檔案，該檔案會有對應的 todo start 、todo end 註解，請在該區間作答，並使其畫面更貼近於result.jpg
 3. 前端主要練習項目
    - HTML 三本柱之一 ( 蓋房子時的 鋼筋水泥 )
    - CSS 三本柱之一 ( 油漆 )
@@ -11,6 +11,25 @@
 4. 每次的作業將會練習到HTML和CSS的應用，並熟悉語法、排版，在熟悉後，才會加上JavaScript與框架。
 5. 作業並未有分數，也沒有硬性的時間規定，在每次推送完成代碼到你的分支後，我將會檢查並且指引你修正程式碼。
 6. 遇到不知道怎麼寫的話，先在網路上搜尋，或參考以下提供的連結，真的不知道，可以來詢問我。
+
+## 學習路線
+1. 環境安裝
+   - git
+   - npm
+   - vscode
+   - vscode extensions
+2. 終端機使用
+3. linux 指令
+4. 檔案位置的表達 ( ex : ../src )
+5. git 指令
+6. git 帳號
+7. 代碼上傳
+8. vscode 使用
+9. html 撰寫與熟悉
+10. 加入 css 撰寫與熟悉
+11. 檔案引入html
+12. javascript 撰寫與熟悉
+13. 加入 React javascript 撰寫與熟悉
 
 ## 代碼完成後上傳步驟
 1. 確認當前分支
@@ -66,6 +85,7 @@ git checkout siou_dev
     1. https://www.maxlist.xyz/2018/11/02/git_tutorial/
  - html 相關
     1. https://www.w3cschool.cn/html/
+    2. https://selflearningsuccess.com/html-tags/
  - css 相關
     1. https://tw.alphacamp.co/blog/css-guide-box-model
     2. https://www.kocpc.com.tw/archives/395875
@@ -75,3 +95,4 @@ git checkout siou_dev
     3. Material Icon Theme
     4. IntelliSense for CSS class names in HTML
     5. HTML CSS Support
+    6. Live Server
