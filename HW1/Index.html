@@ -14,11 +14,17 @@
                 background-color: red;
                 width: 80px;
                 height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .boxPurple{
                 background-color: blueviolet;
                 width: 80px;
                 height: 80px;
+                display: flex;
+                align-items: end;
+                justify-content: end;
             }
         
         </style>
@@ -123,9 +129,6 @@
             >
                 View raw
             </a>
-            <p>
-                (Sorry about that, but we can’t show files that are this big right now.)
-            </p>
         </div>
         <!-- ToDo end 3 -->
 
@@ -162,22 +165,47 @@
         <!-- ToDo start 5 -->
             <h1>5-第一小題</h1>
             <!-- ToDo start 5 - 1 -->
+                <div style="width: 100%; background-color: blue; height: 50px;">
+                </div>
+                <div style="width: 40px; background-color: rgb(130, 230, 23); height: 50px; border-radius: 50%; margin: auto;">
+                </div>
+                <div style="width: 100%; background-color: rgb(186, 12, 110); height: 50px;">
+                </div>
             <!-- ToDo end 5 - 1 -->
             
             <h1>5-第二小題</h1>
             <!-- ToDo start 5 - 2 -->
-            <div
-                class="container"
-            >
                 <div
-                    class="boxRed"
+                    class="container"
                 >
+                    <div
+                        class="boxRed"
+                    >
+                        <div
+                            style="
+                                width: 80%;
+                                height: 80%;
+                                background-color: yellow;
+
+                            "
+                        >
+                        </div>
+                    </div>
+                    <div
+                        class="boxPurple"
+                    >
+                        <div
+                            style="
+                                width: 40px;
+                                height: 40px;
+                                background-color: yellow;
+                                border-radius: 50%;
+
+                            "
+                        >
+                        </div>
+                    </div>
                 </div>
-                <div
-                    class="boxPurple"
-                >
-                </div>
-            </div>
             
             <!-- ToDo end 5 - 2 -->
 
@@ -191,36 +219,42 @@
                     padding-left: 8px;
                 "
             >
-                <header
+                <div
                     style="
                         background-color: white;
                         height: 40px;
                     "
                 >
                     hearder
-                </header>
-                <aside
+                </div>
+                <div
                     style="
-                        width: 30%;
-                        float: left;
-                        background-color: rgb(82, 255, 47);
-                        color: black;
-                        height: 400px;
+                        display: flex; // 區塊元素從垂直轉乘水平
+                        /* justify-content: ; // 影響y軸
+                        align-items: ; // 影響x軸 */
                     "
                 >
-                    sidebar
-                </aside>
-                <section
-                    style="
-                        width: 70%;
-                        float: right;
-                        background-color: blue;
-                        color: white;
-                        height: 400px;
-                    "
-                >
-                    body
-                </section>
+                    <div
+                        style="
+                            width: 30%;
+                            background-color: rgb(82, 255, 47);
+                            color: black;
+                            height: 400px;
+                        "
+                    >
+                        sidebar
+                    </div>
+                    <div
+                        style="
+                            width: 70%;
+                            background-color: blue;
+                            color: white;
+                            height: 400px;
+                        "
+                    >
+                        body
+                    </div>
+                </div>
             </div>
             <!-- ToDo end 5 - 3 -->
         <!-- ToDo end 5 -->
