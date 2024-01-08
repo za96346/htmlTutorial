@@ -1,21 +1,55 @@
 /* 第一題class */
 .card {
     /* todo */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    box-shadow: 10px 10px 20px black;
 }
 
 .card-header {
     /* todo */
+    background-color: transparent;
 }
 
 .card-header img {
     /* todo */
+    height: 180px;
+    width: 200px;
 }
 
 .card-body {
     /* todo */
+    color: black;
 }
 
 /* -------------------------------------------------- */
 
 /* 第二題class */
 /* todo */
+.div-all:nth-child(2) {
+    margin-top: 30px;
+}
+.div-all>div span{
+    font-size: 30px;
+}
+.div-all div:first-child>span{
+    color: blue;
+}
+.div-all div:nth-child(2)>span{
+    color: red;
+}
+.div-all div:last-child>span{
+    color: green;
+}
+
+.div-all span>span:hover{
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* transform: translate(50px) scale(1.05);
+   scale: 1.05; */

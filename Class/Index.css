@@ -1,3 +1,9 @@
+html body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 .ingtest {
     width: 300px;
     height: 320px;
@@ -59,4 +65,23 @@
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+.div-all span:last-child a:first-child{
+    color: yellow;
+    font-size: 30px;
+}
+
+.div-all span:first-child a:first-child {
+    color: yellow;
+    font-size: 30px;
+}
+
+.menu-item{
+    padding-left: 10px;
+}
+.menu-item:hover{
+    background-color: aqua;
+    color: blue;
+    cursor: pointer;
 }
