@@ -3,6 +3,7 @@ html body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background-image: linear-gradient(to right top,rgb(99, 220, 212),rgb(208, 101, 220));
 }
 .ingtest {
     width: 300px;
@@ -85,3 +86,45 @@ html body {
     color: blue;
     cursor: pointer;
 }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.login{
+    background-color: white;
+    width: 40%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.login h2{
+    text-align: center;
+}
+.login span{
+    font-size: 12px;
+}
+.input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px black solid;
+    margin-bottom: 10px;
+}
+.login p{
+    text-align: right;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.button{
+    height: 30px;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to right,rgb(116, 202, 228),rgb(179, 101, 220));
+    /* background-color: rgb(207, 184, 230); */
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+/* 加線，正方形，輸入框中的圖案 */
