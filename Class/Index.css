@@ -3,7 +3,8 @@ html body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: linear-gradient(to right top,rgb(99, 220, 212),rgb(208, 101, 220));
+    background-color: rgba(216, 215, 213, 0.3);
+    /* background-image: linear-gradient(to right top,rgb(99, 220, 212),rgb(208, 101, 220)); */
 }
 .ingtest {
     width: 300px;
@@ -87,12 +88,12 @@ html body {
     cursor: pointer;
 }
 
-body{
+/* body{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
-}
+} */
 .login{
     background-color: white;
     width: 40%;
@@ -111,11 +112,26 @@ body{
     border: none;
     border-bottom: 1px black solid;
     margin-bottom: 10px;
+    padding-left: 30px;
+}
+.input:focus {
+    outline: none;
 }
 .login p{
     text-align: right;
     font-size: 12px;
     margin-top: 0px;
+}
+.login .input_block {
+    position: relative;
+}
+.login .input_block img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }
 .button{
     height: 30px;
@@ -127,4 +143,48 @@ body{
     border-radius: 50px;
     margin-top: 30px;
 }
-/* 加線，正方形，輸入框中的圖案 */
+/* 輸入框中的圖案 */
+.homePage{
+    font-size: 20px;
+}
+.homePage h1{
+    color: orange;
+    font-weight: 100;
+}
+.service_block{
+    padding: 30px;
+    margin-top: 50px;
+}
+.service_block_body{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.service_block_body div>div{
+    height: 150px;
+    width: 150px;
+    background-color: blanchedalmond;
+}
+.service_block_body h5{
+    opacity: 0.2;
+}
+.marquee_block{
+    height: 100vh;
+    width: 100vw;
+}
+.header_block{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.header_block div:last-child{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.header_block div:last-child div{
+    margin: 0px 10px;
+}
