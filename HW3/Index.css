@@ -55,27 +55,23 @@ html body {
     align-items: center;
     justify-content: center;
 }
-.service_block_body{
-    align-items: center;
-    justify-content: center;
-}
 .service_block_body h1{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-.service_block_body div{
-    color: white;
-    text-decoration: underline;
-    text-underline-position: under;
-    text-align: center;
-    font-style: italic;
-}
+
 .video{
     position: relative;
     display: flex;
     justify-content: space-evenly;
     padding: 0px 180px;
     align-items: center;
+
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    font-style: italic;
 }
 .video img{
     height: 30px;
