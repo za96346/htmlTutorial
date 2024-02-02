@@ -1,13 +1,34 @@
-a = 5
-b = "wefwfwef"
+# function
+
+# 加法功能
+def add(a, b):
+    result = a + b
+
+    print("加數是: ", a)
+    print("被加數是: ", b)
+    print("結果是: ", result)
+
+    return result
+
+def minus(a, b):
+    print(a - b)
+
+def times(a, b):
+    print(a * b)
+
+def division(a, b):
+    print(a / b)
 
 
-for i in range(1, 5):
-    print(i)
+twoNumResult = add(5, 10)
+minusResult = minus(twoNumResult, 80)
 
-if a not in "abc":
-    print("is not abc string")
+print("twoNumResult ", twoNumResult)
 
-c = [1, 2, 3]
 
-print(f"wefoijo {b}")
+def cal_area_of_triangle(bottom, height):
+    cal = bottom * height / 2
+    return cal
+
+triangle = cal_area_of_triangle(4, 5)
+print("面積為: ",triangle)

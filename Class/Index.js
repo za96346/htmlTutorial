@@ -42,5 +42,5 @@ for (let i = 0; i < arr.length; i++){
     console.log(`index ${i}`, arr[i] + 10)
 }
 
-arr.map((item, index) => console.log(`index ${index}`, item + 10))
+// arr.map((item, index) => console.log(`index ${index}`, item + 10))
 
