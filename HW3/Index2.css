@@ -21,12 +21,16 @@ body{
     align-items: center;
     font-size: 14px;
 }
-.header_block>div:last-child div{
+.header_block>div:last-child div {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.header_block>div:last-child div div {
     margin-right: 30px;
 }
+
 .box_input{
     position: absolute;
     display: flex;

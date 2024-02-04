@@ -11,6 +11,10 @@ html body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover; */
+
 }
 .head_block>div{
     position: fixed;
