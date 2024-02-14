@@ -74,10 +74,11 @@ h1{
 }
 .input_box{
     width: 60vw;
+    margin: auto;
 }
 input{
     height: 30px;
-    width: 500px;
+    width: 100%;
     border: 1px solid #000;
     margin: 5px;
 }
@@ -89,6 +90,11 @@ input[type="text"]{
 input[type="button"]{
     background-color: #000;
     color: #fff;
+}
+@media screen and (max-width:512px){
+    .input_box{
+        width: 100vw;
+    }
 }
 .button{
     font-size: 12px;

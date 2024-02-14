@@ -1,5 +1,9 @@
 import time
 
+# function 格式
+# def yourFunctionName(param1, param2 .....):
+#       onTabToStart = 1
+
 # class SmartPhone:
 #     def __init__(self, color: str, size: int, budge: int, brand: str) -> None:
 #         self.color = color
