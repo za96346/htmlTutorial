@@ -6,7 +6,11 @@
 
 def Map(iteralFunction, iteralList) -> list:
     # 在這邊編寫你的 map邏輯
-    return
+    result = []
+    for char in range(len(iteralList)): # char字元
+        iteralList[char]=iteralFunction(iteralList[char])
+        result=iteralList
+    return result
 
 
 # 這邊有用到 lambda 匿名函式
