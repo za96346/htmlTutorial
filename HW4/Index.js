@@ -159,7 +159,7 @@
  * @todo 函式練習 -- 宣告一個函示，該功能需要滿足以下數學式，有兩個參數 a、b，並回傳結果
  * @description 數學式 = (a - b)(a ^ 2 + ab + b ^ 2)
 */
-// let result = ((a, b) => (console.log((a - b)*(a^2 + a*b + b^2))))
+// let result = ((a, b) => (console.log((a-b)*(a**2 + a*b + b**2))))
 let result = 0
 function calculate(a, b){
     result = (a-b) * (a**2 + a*b + b**2)
