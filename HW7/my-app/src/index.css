@@ -1,13 +1,61 @@
-body {
+html body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* background-color: rgba(216, 215, 213, 0.3); */
+  background-image: linear-gradient(to right top,rgb(99, 220, 212),rgb(208, 101, 220));
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login{
+  background-color: white;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.login h2{
+  text-align: center;
+}
+.login span{
+  font-size: 12px;
+}
+.input{
+  height: 30px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px black solid;
+  margin-bottom: 10px;
+  padding-left: 18px;
+}
+.input:focus {
+  outline: none;
+}
+.login p{
+  text-align: right;
+  font-size: 12px;
+  margin-top: 0px;
+}
+.login .input_block {
+  position: relative;
+}
+/* .login .input_block img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+} */
+.button{
+  height: 30px;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(to right,rgb(116, 202, 228),rgb(179, 101, 220));
+  /* background-color: rgb(207, 184, 230); */
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
 }

@@ -29,3 +29,4 @@ input 欄位包含以下
 | record three| | buttonEdit | | buttonDelete |
 ...
 ```
+npm start
