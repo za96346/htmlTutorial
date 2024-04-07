@@ -67,27 +67,36 @@ html body {
 .layout>div:first-child{
   width: 300px;
   height: 100%;
-  background-color: bisque;
+  background-color: rgb(165, 103, 95);
   transition: 0.5s;
 }
 .layout>div:last-child{
   width: calc(100% - 300px);
   height: 100%;
-  background-color: cornflowerblue;
+  background-color: rgb(175, 168, 142);
   transition: 0.5s;
 }
-img:hover{
+.layout>div:nth-child(2)>img:hover{
   cursor: pointer;
 }
 .menuImg{
-  width: 100%;
-  height: 150px;
+  text-align: center;
+  margin: 18px;
+}
+div:focus{
+  border-radius: 10px;
 }
 .menuList div{
-  padding: 20px;
+  padding: 15px;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 18px;
+}
+.menuList div:focus{
+  background:  rgb(203, 122, 108);
 }
 .menuList div:hover {
   cursor: pointer;
+  background-color: rgb(203, 122, 108);
+  transition: 0.3s;
+  border-radius: 10px;
 }
