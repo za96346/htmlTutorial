@@ -28,7 +28,7 @@ const SmallCard = ({ week,weather,temperature, delay }) => {
     return(
         <div
             style={{
-                opacity: show ? '1' : '0'
+                opacity: show ? '1' : '0',
             }}
             className='SmallCard'
         >
