@@ -10,7 +10,27 @@ async function setUp() {
             /**
              * @TODO 把使用者分成 男 女 其他 三個陣列
             */
+            console.log(v)
+            const male = []
+            const female = []
+            const others = []
 
+            v.datas.map((item) => {
+                console.log('item => ', item)
+                const gender = item.gender
+                if(gender === "male"){
+                    male.push(item)
+                }else if(gender === "female"){
+                    female.push(item)
+                }else{
+                    others.push(item)
+                }
+            })
+
+            console.log("male =>", male)
+            console.log("female =>", female)
+            console.log("others =>", others)
+            
             return v
         })
 
@@ -29,6 +49,19 @@ async function setUp() {
              *      [category_name2]: Array<ProductsObject>,
              * }
             */
+            const result = {
+            }
+            v.map((item) => {
+                console.log('result[item.category] =>', result[item.category])
+                result[item.category] = [
+                    ...(result[item.category] || []),
+                    item
+                ]
+                console.log('result[] =>', result[item.category])
+            })
+
+            console.log('result => ', result)
+
 
 
 
@@ -42,12 +75,14 @@ async function setUp() {
              * @returns Array<ProductsObject>
              * 
             */
-
-
+            const sortedProducts = v.sort((itemA, itemB) => itemB.rating.rate - itemA.rating.rate)
+            console.log('sortedProducts => ', sortedProducts)
 
             /** @TODO end */
             return v
         })
+
+    console.log('allProducts => ', allProducts)
 
     /**
      * @description 購物車資料
@@ -58,6 +93,22 @@ async function setUp() {
             /**
              * @TODO 購物車資料裡面的 商品陣列 裡面的商品只有productId, quantity, 你要去 allProducts 找到該單筆的商品資料, 並且把他放回去
             */
+            console.log(v)
+            const result = v.map((item) => {
+                item.products = item.products.map((item2) => {
+                    productId = item2.productId
+                    console.log(productId)
+                    const thisProduct = allProducts.find((element) => {
+                        return productId == element.id
+                    })
+
+                    item2 = {...item2,...thisProduct}
+
+                    return item2
+                })
+                return item
+            })
+            console.log('result =>', result)
 
             return v
         })
