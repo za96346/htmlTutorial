@@ -11,21 +11,15 @@ async function setUp() {
             /**
              * @TODO 把使用者 依照 id 做排序( 由大到小 ), 並且使用 for loop
             */
-            // const res = []
-            // for(let i = 0; i < v.length; i++) {
-            //     let user_A_id = v[i].id
-            //     if (i == 0) res.push(v[i])
-            //     else {
-            //         for(let j = 0; j < res.length; j++) {
-            //             let user_b_id = res[j].id
-    
-            //             if (user_A_id < user_b_id) {
-            //                 res.splice(j, 0, v[i])
-            //             }
-            //         }
-            //     }
-            // }
-            // console.log("res =>", res)
+
+            let len = v.length
+            while (len > 1) {
+                for (let i = 0; i< len; i++) {
+                    if (v[i].id < v[i + 1].id) {
+                        [v[i], v[i + 1]] = [v[i + 1], v[i]]
+                    }
+                }
+            }
 
 
             // const UserIds = v.map((item) => item.id)
