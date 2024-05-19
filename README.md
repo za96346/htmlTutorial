@@ -100,3 +100,7 @@ git checkout siou_dev
     4. IntelliSense for CSS class names in HTML
     5. HTML CSS Support
     6. Live Server
+
+# 代辦清單
+1. 天氣app
+2. hw12 for loop sort
