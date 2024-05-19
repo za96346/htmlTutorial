@@ -10,7 +10,7 @@ async function setUp() {
             /**
              * @TODO 把使用者分成 男 女 其他 三個陣列
             */
-            console.log(v)
+            //console.log(v)
             const male = []
             const female = []
             const others = []
