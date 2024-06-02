@@ -1,4 +1,17 @@
 from flask import Flask, jsonify, request
+import DB
+
+"""
+Flask => 這是 Flask 應用程式的核心類別，
+我們可以使用它來建立一個 Flask 應用程式的實例。
+
+jsonify => 這是 Flask 提供的一個函式，
+它將 Python 物件轉換為 JSON 格式的響應。
+
+request => 這是 Flask 提供的一個全域物件，
+用於存取 HTTP 請求中的資訊，例如請求的方法、參數等等。
+
+"""
 
 #  flask app 實利化
 app = Flask(__name__)
@@ -15,26 +28,8 @@ def hello():
     size = request.args.get('size')
     print(size)
 
-    # 使用者資料
-    userValue = {
-        "id": 465,
-        "uid": "35acccf6-b09d-4754-afe3-f0cd3b7649cc",
-        "brand": "Stella Artois",
-        "name": "Bell’s Expedition",
-        "style": "Scottish And Irish Ale",
-        "hop": "TriplePearl",
-        "yeast": "1084 - Irish Ale",
-        "malts": "Wheat mal",
-        "ibu": "76 IBU",
-        "alcohol": "7.9%",
-        "blg": "10.2°Blg"
-    }
+    result = DB.getAllUsers()
 
-    # 定義回傳 array
-    result = []
-    size = int(size)
-    for i in range(size):
-        result.append(userValue)
 
     # return json 格式的資料
     return jsonify(result)
