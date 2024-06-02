@@ -38,9 +38,10 @@ def hello():
 
     result = DB.getAllUsers(company_id)
 
+    size = int(size) if size else len(result)
 
     # return json 格式的資料
-    return jsonify(result)
+    return jsonify(result[0:size])
 
 # 當你用 python 指令跑此檔案的時候 會通過這個判斷式
 if __name__ == '__main__':
