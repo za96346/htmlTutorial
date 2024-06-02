@@ -32,12 +32,12 @@ def Welcome():
 def hello():
     # 接收 前端傳入的 參數 - size - 回傳幾筆資料
     size = request.args.get('size')
-    print(size)
     company_id = request.args.get('company_id')
+
     print(company_id)
+    print(size)
 
     result = DB.getAllUsers(company_id)
-
     size = int(size) if size else len(result)
 
     # return json 格式的資料
